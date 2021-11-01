@@ -1,0 +1,165 @@
+*{
+
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif, Arial; 
+    margin: 0;
+}
+
+
+.flex {
+  
+    display: flex;
+    background-color: #333;
+    width: 100%;
+    height: 100%;
+    
+    
+  }
+  
+.flex > div {
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+    animation-name: alargada;
+    animation-duration: 7s;
+    animation-timing-function: ease;
+    animation-iteration-count:infinite;
+
+}
+
+@keyframes alargada {        
+    0% {background-image:url("SERVICIOS\ 1.jpg"); width: 100%; padding: 100px;background-repeat:no-repeat; background-position: center}  
+
+    50% {background-image:url("SERVICIOS\ 2.jpg"); width: 100%; padding: 100px;background-repeat:no-repeat; background-position: center} 
+
+    100% {background-image:url("logo\ masajes\ 4.jpg"); width: 100%; padding: 100px;background-repeat:no-repeat; background-position: center} 
+}
+
+.navbar {
+    display: flex;
+    background-color: #333;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.iframe {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+iframe{
+
+    padding: 20px;
+    max-width: 100%;
+}
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    
+                }                                    
+
+
+.side {
+    flex: 60%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.col-2 {
+    width: 800px;
+    height: 350px;
+    background-color: rgb(255, 255, 255);
+    animation-name: IMAGENALARGADA;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes IMAGENALARGADA {
+    0% {background-image:url("ANIMACION\ ACEITES\ SI.jpeg"); width: 0%; background-repeat:no-repeat}         
+    35% {background-image:url("ANIMACION\ ACEITES\ SI.jpeg"); width: 45%; background-repeat:no-repeat}     
+    70% {background-image:url("ANIMACION\ ACEITES\ SI.jpeg"); width: 75%;background-repeat:no-repeat}
+    100% {background-image:url("ANIMACION\ ACEITES\ SI.jpeg"); width: 100%;background-repeat:no-repeat}   
+}
+
+.main {
+    flex: 40%;
+    background-color: white;
+    padding: 20px;
+}
+
+
+
+footer {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    
+  }
+
+
+@media (max-width: 850px) {
+    .row
+    {
+        flex-direction: column; 
+    }
+}
+
+    @media (max-width: 650px) {
+
+    .flex,
+    .navbar
+    {
+        flex-direction: column; 
+    }
+}
+
+
+    
